@@ -2,6 +2,7 @@
 
 ### Changes
 
+- Treat Watcher-injected search-request and script defaults as equal so omitted keys no longer fail apply. ([#4538](https://github.com/elastic/terraform-provider-elasticstack/pull/4538))
 - Add `artifacts.investigation_guide` support to `elasticstack_kibana_alerting_rule` (inline `content` or file-based `content_path` with drift-detecting checksum). Requires ([#4489](https://github.com/elastic/terraform-provider-elasticstack/pull/4489))
 - Call Put Mapping when adding fields to an existing index's mappings ([#4507](https://github.com/elastic/terraform-provider-elasticstack/pull/4507))
 - Preserve slo_overview panel presentation fields (title, description, hide_title, hide_border) on update so Terraform state does not drift after refresh, and dedupe the merge logic onto the shared panelkit helpers. ([#4472](https://github.com/elastic/terraform-provider-elasticstack/pull/4472))
